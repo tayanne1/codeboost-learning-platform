@@ -1,0 +1,241 @@
+@media (max-width: 845px) {
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #1f2d3d;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+  .container {
+    max-width: 95%;
+    height: auto;
+    overflow: hidden;
+    margin: 1rem auto;
+  }
+
+  .box {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    transform: none;
+  }
+
+  .wrap-forms {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  form {
+    max-width: 95%;
+    padding: 2rem 1rem;
+    align-items: center;
+  }
+
+  .wrap-input {
+    margin: 1rem;
+  }
+
+  .signup-account,
+  .signin-account {
+    padding: 2rem 1.5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .welcome-back,
+  .welcome-back p {
+    margin: 0.5rem 0;
+  }
+
+  .carousel-container {
+    position: static;
+    width: 100%;
+    height: 130px;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3eaf2;
+  }
+
+  .nome-container,
+  .wrapper-img {
+    display: none;
+  }
+
+  .alltext {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+  }
+
+  .wrap-text {
+    width: 100%;
+  }
+
+  .signup-account {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+    display: flex;
+  }
+}
+
+form.signup-account {
+  transform: translateX(100%);
+}
+
+main.signup-mode form.signin-account {
+  transform: translateX(-100%);
+}
+
+main.signup-mode form.signup-account {
+  transform: translateX(0%);
+}
+
+.menu {
+  gap: 2px !important;
+}
+@media (max-width: 617px) {
+  .carousel-container {
+    padding: 0 !important;
+  }
+  .text p {
+    display: flex;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+@media (max-width: 510px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    width: 100vw; 
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0%;
+  }
+
+  .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrap-forms {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    transition: 0.8s ease-in-out;
+    border-radius: none !important;
+  }
+  form.signup-account {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  main.signup-mode form.signin-account {
+    opacity: 0;
+    pointer-events: none;
+  }
+  main.signup-mode form.signup-account {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  main.signup-mode .wrap-forms {
+    right: 0;
+    border-radius: none !important;
+  }
+
+  .signin-account,
+  .signup-account {
+    width: 100%;
+
+    height: 100%; 
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s ease-in-out, opacity 0.4s;
+  }
+  .signin-account {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  form.signup-account {
+    transform: translateX(100%);
+  }
+
+  main.signup-mode form.signin-account {
+    transform: translateX(-100%);
+  }
+
+  main.signup-mode form.signup-account {
+    transform: translateX(0%);
+  }
+
+  .carousel-container {
+    display: none !important;
+  }
+}
+
+@media (max-width: 390px) {
+}
